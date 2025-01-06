@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaftab Shaikh Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #444;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+    </style>
+    <script>
+        function toggleDetails(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Aaftab Shaikh Portfolio</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> +849-090-0107</p>
+            <p><strong>Email:</strong> <a href="mailto:aaftabshk77@gmail.com">aaftabshk77@gmail.com</a></p>
+            <p><strong>Location:</strong> Ahmedabad, India</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aaftab-shaikh-03844a243/" target="_blank">Aaftab's LinkedIn</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/AaftabShaikh77" target="_blank">Aaftab's GitHub</a></p>
+        </section>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>I am an aspiring AI Engineer with a solid foundation in AI and ML, specializing in building diverse models for computer vision, NLP, and solving complex problems. Dedicated to creating impactful applications that contribute to societal betterment, with expertise in crafting innovative solutions and a passion for pushing the boundaries of AI technology.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <button onclick="toggleDetails('educationDetails')">Toggle Details</button>
+            <div id="educationDetails" style="display: none;">
+                <ul>
+                    <li><strong>MSc in AI & ML</strong> (2023–2025) - Gujarat University | SGPA: 7.7</li>
+                    <li><strong>BSc in AI & ML</strong> (2020–2023) - Gujarat University | CGPA: 7.6</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <button onclick="toggleDetails('skillsDetails')">Toggle Details</button>
+            <div id="skillsDetails" style="display: none;">
+                <p><strong>Technical:</strong> Machine Learning, Deep Learning, Computer Vision, NLP, GANs, YOLO, SQL, Python, Modeling, HTML, CSS, Git</p>
+                <p><strong>Software:</strong> Jupyter Notebook, Google Colab, Power BI, VS Code, SPSS, MySQL, Excel</p>
+                <p><strong>Languages:</strong> English, Hindi, Gujarati</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <button onclick="toggleDetails('certificationsDetails')">Toggle Details</button>
+            <div id="certificationsDetails" style="display: none;">
+                <p>Deep Learning Specialization (Coursera)</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <button onclick="toggleDetails('projectsDetails')">Toggle Details</button>
+            <div id="projectsDetails" style="display: none;">
+                <ul>
+                    <li><strong>Text-to-Image Generation:</strong> Worked with GANs to generate images based on user text input. Focused on datasets of flowers and birds. Future goal: Develop a product for generating any image type.</li>
+                    <li><strong>De-Smoking Algorithm:</strong> Real-time video enhancement for indoor fire scenarios using CycleGAN. Achieved 92% accuracy.</li>
+                    <li><strong>Helmet Detection System:</strong> Implemented YOLOv8 with annotated datasets for high-speed helmet detection in images and videos.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
